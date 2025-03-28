@@ -48,7 +48,7 @@ class ApplicationTests {
         Exception exception = assertThrows(ArithmeticException.class, () -> {
             calculator.divide(1, 0);
         });
-        assertEquals("Division by zero is not allowed.", exception.getMessage());
+        assertEquals("Division by zero is not allowed.", exception.getMessage(), "The division by zero test was passed successfully" );
     }
 
 }
