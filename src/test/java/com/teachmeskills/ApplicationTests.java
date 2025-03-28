@@ -28,8 +28,12 @@ class ApplicationTests {
     @Test
     public void testSubtract_Success() {
         assertEquals(1000, calculator.subtract(2000, 1000),"Subtract operation successful");
-        assertNotEquals(0.1, calculator.subtract(0.3, 0.2),  "Subtract operation failed" );
         assertEquals(0, calculator.subtract(1, 1),"Subtract operation successful");
+    }
+
+    @Test
+    public void testSubtract_Failed() {
+        assertEquals(0.1, calculator.subtract(0.3, 0.2),  "Test failed due to rounding inaccuracy of double type" );
     }
 
     @Test
