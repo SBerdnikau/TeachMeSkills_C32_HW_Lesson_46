@@ -33,14 +33,14 @@ class ApplicationTests {
     }
 
     @Test
-    public void testMultiply() {
+    public void testMultiply_Success() {
         assertEquals(0.0, calculator.multiply(5, 0), "Multiply operation successful");
         assertEquals(-10.0, calculator.multiply(-5, 2),  "Multiply operation successful" );
         assertEquals(15.0, calculator.multiply(-5, -3), "Multiply operation successful" );
     }
 
     @Test
-    public void testDivide() {
+    public void testDivide_Success() {
         assertEquals(2.0, calculator.divide(4, 2), "Divide operation successful" );
         assertEquals(-3.0, calculator.divide(-9, 3), "Divide operation successful");
         assertEquals(-2.0, calculator.divide(4, -2), "Divide operation successful" );
