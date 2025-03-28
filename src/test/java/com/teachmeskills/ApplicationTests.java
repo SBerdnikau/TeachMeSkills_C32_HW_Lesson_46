@@ -34,16 +34,16 @@ class ApplicationTests {
 
     @Test
     public void testMultiply() {
-        assertEquals(0.0, calculator.multiply(5, 0));
-        assertEquals(-10.0, calculator.multiply(-5, 2));
-        assertEquals(15.0, calculator.multiply(-5, -3));
+        assertEquals(0.0, calculator.multiply(5, 0), "Multiply operation successful");
+        assertEquals(-10.0, calculator.multiply(-5, 2),  "Multiply operation successful" );
+        assertEquals(15.0, calculator.multiply(-5, -3), "Multiply operation successful" );
     }
 
     @Test
     public void testDivide() {
-        assertEquals(2.0, calculator.divide(4, 2));
-        assertEquals(-3.0, calculator.divide(-9, 3));
-        assertEquals(-2.0, calculator.divide(4, -2));
+        assertEquals(2.0, calculator.divide(4, 2), "Divide operation successful" );
+        assertEquals(-3.0, calculator.divide(-9, 3), "Divide operation successful");
+        assertEquals(-2.0, calculator.divide(4, -2), "Divide operation successful" );
 
         Exception exception = assertThrows(ArithmeticException.class, () -> {
             calculator.divide(1, 0);
